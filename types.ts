@@ -10,7 +10,9 @@ export interface Project {
   techStack: string[];
   platforms: string[];
   description: string;
+  impact?: string;
   responsibilities: string[];
+  achievements?: string[];
   image?: string;
   androidUrl?: string;
   iosUrl?: string;
@@ -19,6 +21,7 @@ export interface Project {
 export interface Experience {
   role: string;
   company: string;
+  location: string;
   period: string;
   responsibilities: string[];
 }
@@ -28,4 +31,9 @@ export interface Education {
   institution: string;
   year: string;
   score: string;
+}
+
+export interface Certification {
+  title: string;
+  issuer: string;
 }

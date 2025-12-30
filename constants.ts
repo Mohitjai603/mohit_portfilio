@@ -1,5 +1,5 @@
 
-import { SkillCategory, Project, Experience, Education } from './types';
+import { SkillCategory, Project, Experience, Education, Certification } from './types';
 
 export const PERSONAL_INFO = {
   name: "Mohit Jaiswal",
@@ -7,32 +7,40 @@ export const PERSONAL_INFO = {
   email: "er.mohit.pro@gmail.com",
   phone: "+91-6307715099",
   linkedin: "https://www.linkedin.com/in/mohit-jaiswal-8570b4187/",
+  website: "https://mohitjaiswal.dev",
   gitlab: "https://gitlab.com/mohit789jai1",
-  summary: "Sr. Software Developer with over 5.9+ years of experience in mobile, web, and backend development across diverse industries, including FinTech, Bidding, AR, and Marketplace. Expertise in Java, Dart, JavaScript, and Node.js with a comprehensive understanding of the Software Development Life Cycle (SDLC).",
-  // Updated with an image representing growth and technology: a plant next to a laptop with code
+  summary: "Senior Flutter Developer with strong Mobile Architecture ownership and 5.10+ years of experience architecting scalable Flutter applications using Clean Architecture and MVVM for Android and iOS. Strong expertise in REST API integration, performance profiling, and memory optimization, delivering apps with 99.5% crash-free rates for 1M+ users.",
   profileImage: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=800&auto=format&fit=crop"
 };
 
+export const STATS = [
+  { label: 'Experience', value: '5.10+ Yrs' },
+  { label: 'Production Apps', value: '15+' },
+  { label: 'Active Users', value: '1M+' },
+  { label: 'Crash-Free Rate', value: '99.5%' },
+  { label: 'Avg Rating', value: '4.5 ★' }
+];
+
 export const SKILLS: SkillCategory[] = [
   {
-    title: "Programming",
-    skills: ["Dart", "Java", "JavaScript", "TypeScript", "C", "C++"]
-  },
-  {
-    title: "Front-End",
-    skills: ["Flutter (Android, iOS, Web)", "Dart", "HTML", "CSS3", "React Js"]
-  },
-  {
-    title: "Back-End & DB",
-    skills: ["Node.js", "Express.js", "RESTful APIs", "Microservices", "MySQL", "MongoDB", "PostgreSQL", "Firebase"]
+    title: "Mobile Development",
+    skills: ["Flutter", "Dart", "iOS/Android (native concepts)", "Material Design"]
   },
   {
     title: "State Management",
-    skills: ["Provider", "GetX", "Bloc", "RiverPod"]
+    skills: ["Bloc", "GetX", "Provider", "Riverpod"]
   },
   {
-    title: "DevOps & Cloud",
-    skills: ["Git", "CI/CD", "AWS", "Firebase", "GCP", "Docker", "Vercel"]
+    title: "Backend & Databases",
+    skills: ["Node.js", "Express.js", "RESTful APIs", "Microservices", "Java", "PostgreSQL", "MongoDB", "MySQL", "Firebase", "Hive", "Sequelize ORM"]
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: ["AWS", "Firebase", "GCP", "Docker", "Kubernetes", "Vercel", "Jenkins", "GitLab CI/CD", "GitHub Actions", "Git"]
+  },
+  {
+    title: "Payment & Testing",
+    skills: ["Stripe", "CashFree", "PayU", "iPOS (PCI-DSS)", "Jest", "Mocha", "Chai", "Flutter_Test", "Unit & Integration Testing"]
   }
 ];
 
@@ -106,24 +114,28 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCES: Experience[] = [
   {
     role: "Sr. Software Developer",
-    company: "Quantumleap Learning Solution PVT LTD",
-    period: "Sept 2024 - Dec 2025",
+    company: "Quantumleap Learning Solutions Pvt Ltd",
+    location: "Bangalore",
+    period: "September 2024 - Present",
     responsibilities: [
-      "Led end-to-end cross-platform development using Flutter & Dart.",
-      "Utilized Node.js for scalable back-end solutions.",
-      "Managed CI/CD pipelines to automate testing and deployment.",
-      "Implemented secure OAuth and JWT authentication."
+      "Led code reviews and enforced SOLID principles across Flutter modules",
+      "Designed scalable architecture using Clean Architecture and dependency injection",
+      "Performed performance profiling and memory optimization, reducing crash rates",
+      "Architected and deployed 3+ cross-platform mobile applications (99.5% crash-free)",
+      "Optimized application performance resulting in 40% faster load times"
     ]
   },
   {
     role: "Software Developer",
-    company: "Zeksta Technology PVT LTD",
+    company: "Zeksta Technology Pvt Ltd",
+    location: "Bangalore",
     period: "April 2020 - August 2024",
     responsibilities: [
-      "Developed high-performance Flutter applications.",
-      "Collaborated with stakeholders to define project scope.",
-      "Optimized web applications for performance on AWS and Vercel.",
-      "Built RESTful microservices using Node.js/Express."
+      "Developed and shipped 12+ production-ready mobile applications serving 100K+ users",
+      "Built RESTful APIs using Node.js and Express.js, handling 10K+ daily requests",
+      "Implemented automated CI/CD pipelines, reducing deployment time from 4 hours to 30 minutes",
+      "Integrated 5+ payment gateways (Stripe, CashFree, PayU) with secure authentication",
+      "Achieved 95%+ code quality score through implementation of SonarQube and ESLint"
     ]
   }
 ];
@@ -141,4 +153,15 @@ export const EDUCATION: Education[] = [
     year: "2020",
     score: "68%"
   }
+];
+
+export const CERTIFICATIONS: Certification[] = [
+  { title: "O & A Level Diploma", issuer: "NIELIT" },
+  { title: "Blockchain Essentials", issuer: "LinkedIn Learning" },
+  { title: "Active Flutter Community Contributor", issuer: "Community" }
+];
+
+export const LANGUAGES = [
+  { name: "English", level: "Professional working proficiency" },
+  { name: "Hindi", level: "Native/Bilingual proficiency" }
 ];
