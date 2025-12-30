@@ -2,7 +2,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { PERSONAL_INFO, PROJECTS, SKILLS, EXPERIENCES } from "./constants";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: "AIzaSyBqrWB_qLnL95ma6zQleAcdMPixkGDplb8" });
 
 const SYSTEM_INSTRUCTION = `
 You are Mohit Jaiswal's personal portfolio assistant. 
