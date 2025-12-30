@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   define: {
     // This allows process.env.API_KEY to work in the browser during build
-    'process.env.API_KEY': JSON.stringify(process.env.API_KEY)
+    'process.env.API_KEY': JSON.stringify("AIzaSyBqrWB_qLnL95ma6zQleAcdMPixkGDplb8")
   },
   build: {
     outDir: 'dist',
